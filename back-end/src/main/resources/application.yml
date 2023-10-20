@@ -5,13 +5,13 @@ spring:
     name: sm
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://121.36.63.55:3306/sm
+    url: jdbc:mysql://127.0.0.1:3306/sm
     username: root
-    password: wenxin
+    password: root
   redis:
     database: 1
-    host: 121.36.63.55
-    password: wenxin
+    host: 127.0.0.1
+    password: 你的密码
     port: 6379
     lettuce:
       pool:
@@ -22,9 +22,8 @@ spring:
     host: smtp.163.com
     port: 465
     protocol: smtps
-    username: wenxin_web@163.com
-    password: YCOUPMDBKDTQRAJR
-                                                          
+    username: your@163.com
+    password: 你的Key                                     
 
 root-path: ${user.dir}
 image-path: ${root-path}/image/
